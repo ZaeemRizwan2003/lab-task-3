@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/navbar.css">
+ <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background-color: #f8f9fa; /* Light blue background color */
+    }
+    html {
+      box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+      background-color: #e9ecef; /* Light blue card background color */
+    }
+
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #0056b3; /* Dark blue background color */
+      color: white;
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: #007bff; /* Light blue title color */
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+
+    img {
+      width: 100%;
+      height: 300px; /* Set a fixed height for the images */
+      object-fit: cover; /* Maintain aspect ratio */
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    h1 {
+      font-weight: bold;
+      text-decoration: underline;
+      color: white; /* Light blue title color */
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-primary {
+      color: #0056b3 !important; /* Change this to your preferred primary color */
+    }
+
+    h2 {
+      font-size: 2em; /* Adjust the font size as needed */
+      font-weight: 700; /* Use the bold version of the font */
+      margin-bottom: 20px; /* Add some spacing at the bottom */
+    }
+
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Parcel Express</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="control_view/page.php">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Operations
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="homepage.php">Show All Parcels</a>
+                    <a class="dropdown-item" href="add.php">Add Parcel</a>
+                    <a class="dropdown-item" href="manager.php">Edit Parcel</a>
+                    <a class="dropdown-item" href="delete.php">Delete Parcel</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="fakecompany.php">Company</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutus.php">Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="fakecontact.php">Contact Us</a>
+            </li>
+</ul>
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="logout.php">Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="about-section">
+  <h1 class="display-4">About Us Page</h1>
+  <br>
+  <p class="lead">We have started our own delivery service and we will soon become the best in the business.</p>
+</div>
+
+<h2 class="text-center text-primary">Our Team</h2>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <img src="../img/Header.jpg" alt="Jane" class="card-img-top">
+      <div class="card-body">
+        <h2 class="card-title text-primary">Jane Doe</h2>
+        <p class="card-text title">CEO & Founder</p>
+        <p>The queen bee.</p>
+        <p>jane@example.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <img src="../img/coder.jpeg" alt="Mike" class="card-img-top">
+      <div class="card-body">
+        <h2 class="card-title text-primary">Mike Ross</h2>
+        <p class="card-text title">Art Director</p>
+        <p>The da Vinci of our website.</p>
+        <p>mike@example.com</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4">
+    <div class="card">
+      <img src="../img/man.jpg" alt="John" class="card-img-top">
+      <div class="card-body">
+        <h2 class="card-title text-primary">John Doe</h2>
+        <p class="card-text title">Designer</p>
+        <p>You got any issue. John is here.</p>
+        <p>john@example.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js (optional) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
